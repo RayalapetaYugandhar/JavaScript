@@ -111,3 +111,101 @@
     3. Write nested conditional statements that check if a variable `day` is Saturday or Sunday, and if a variable `time` is before 11am. If both conditions are true, log "Sleep in!", else log "Wake up!".
     4. Write a series of `if`, `else if`, and `else` statements that check if a variable `temp` is below 32 (freezing), between 32 and 50 (cold), between 50 and 70 (pleasant), or above 70 (hot). Log an appropriate message for each temperature range.
     5. Write conditional statements to implement a simple calculator. Have the user input two numbers and an operation ("+","-","*","/"). Based on the operation, perform the mathematical operation on the numbers and log the result. Handle division by zero gracefully without errors.
+
+####################################################333
+    Answers:-
+
+    1.  
+        let weather = "It's hot";
+        let temp = 80;
+        
+        if(temp>=80){
+            console.log(weather);
+        }else{
+            console.log("It's nice");
+        }
+
+    2. 
+        var age = 18;
+        var vote = age>=18 ? "canVote" : "can't Vote";
+        console.log(vote);
+
+    3. 
+                
+        var day = "Saturday || Sunday";
+        // var day = "Saturday || Monday";
+        var time = 11;
+        if(day == "Saturday || Sunday"){
+            if(time<=11){
+                console.log("Sleep in!");
+            }else{
+                console.log("Wake up!");
+            }
+        }else{
+            if(time<=11){
+                console.log("Sleep well you have a time.....!");
+            }else{
+                console.log("Wake Up You have to attend a meeting....!");
+            }
+        }
+
+    4. 
+        var temperature = 32;
+    
+        if(temperature <= 32){
+            console.log("freezing");
+        }else if(temperature>32 && temperature<50 ) {
+            console.log("cold");
+        }else if(temperature>50 && temperature<70 ) {
+            console.log("pleasant");
+        }else{
+            console.log("hot");
+        } 
+
+    5. 
+        // Add two numbers 
+        function add(num1, num2) { 
+          return num1 + num2; 
+        } 
+
+        // Function for subtraction 
+        function subtract(num1, num2) { 
+          return num1 - num2; 
+        } 
+
+        // For multiplying of two numbers 
+        function multiply(num1, num2) { 
+          return num1 * num2; 
+        } 
+
+        // Function for division of 
+        // two numbers 
+        function divide(num1, num2) { 
+        // if(num2 === 0) return undefined; 
+          return num1 / num2; 
+        } 
+
+        // Creating variables for 
+        // num1 and num2 
+        let num1 = 16; 
+        let num2 = 4; 
+
+        let operation = "+"; 
+
+        // Creating result variable 
+        let result; 
+
+        // If-Else conditions 
+        if (operation === "+") { 
+          result = add(num1, num2); 
+        } else if (operation === "-") { 
+          result = subtract(num1, num2); 
+        } else if (operation === "*") { 
+          result = multiply(num1, num2); 
+        } else if (operation === "/") { 
+          result = divide(num1, num2); 
+        } else { 
+          result = "Invalid operation"; 
+        } 
+        // Printing the final result 
+        console.log("The Result of this operation is : " + result);
