@@ -19,7 +19,7 @@
     
     1. **Addition (+):** Adds two numbers together.
         
-        ```jsx
+        ``jsx
         let sum = 5 + 3; // sum will be 8
         --------------------
         Practice code:-
@@ -32,7 +32,7 @@
         
     2. **Subtraction (-):** Subtracts the right operand from the left operand.
         
-        ```jsx
+        ``jsx
         let difference = 10 - 4; // difference will be 6
 
         ------------------
@@ -45,7 +45,7 @@
         
     3. **Multiplication (*):** Multiplies two numbers.
         
-        ```jsx
+        ``jsx
         let product = 6 * 7; // product will be 42
 ---------------------------------
         Practice code:-
@@ -57,7 +57,7 @@
         
     4. **Division (/):** Divides the left operand by the right operand.
         
-        ```jsx
+        ``jsx
         let quotient = 20 / 4; // quotient will be 5
         ----------
         Practice code:-
@@ -161,7 +161,7 @@
         
     5. **Greater Than (>):** Checks if the left value is greater than the right value.
         
-        ```jsx
+        ``jsx
         10 > 5; // true
         ---------------
         Practice Code:-

@@ -10,7 +10,7 @@
     
     The `if` statement is used to execute a block of code if a condition is `true`.
     
-    ```jsx
+    ``jsx
     let temperature = 25;
     
     if (temperature > 30) {
@@ -27,7 +27,7 @@
     
     The `if...else` statement is used when you want to execute one block of code if a condition is `true`, and another block if it's `false`.
     
-    ```jsx
+    `jsx
     let age = 18;
     
     if (age >= 18) {
@@ -112,7 +112,9 @@
     4. Write a series of `if`, `else if`, and `else` statements that check if a variable `temp` is below 32 (freezing), between 32 and 50 (cold), between 50 and 70 (pleasant), or above 70 (hot). Log an appropriate message for each temperature range.
     5. Write conditional statements to implement a simple calculator. Have the user input two numbers and an operation ("+","-","*","/"). Based on the operation, perform the mathematical operation on the numbers and log the result. Handle division by zero gracefully without errors.
 
-####################################################333
+####################################################
+
+```
     Answers:-
 
     1.  

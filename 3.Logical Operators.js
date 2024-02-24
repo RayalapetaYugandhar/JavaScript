@@ -10,7 +10,7 @@
     
     The `&&` operator returns `true` if both of its operands are `true`. If at least one of the operands is `false`, it returns `false`.
     
-    ```jsx
+    ``jsx
     let isTrue = true;
     let isFalse = false;
     
@@ -84,6 +84,8 @@
     
     Note: use prompt() function to get user input
 
+
+    ```
     1.  let x =  10;
         let y =  20;
         let z = x >= 10 && y <= 20;

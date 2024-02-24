@@ -10,7 +10,7 @@
     
     The `for` loop is used when you know how many times you want to repeat a block of code. It consists of three parts: initialization, condition, and increment/decrement.
     
-    ```jsx
+    ``jsx
     for (let i = 0; i < 5; i++) {
       console.log("Iteration number: " + i);
     }
@@ -103,6 +103,7 @@
     
     ```
     /////////////////////////////////////////////////////////////////////////
+    ```
 Answers:-
 
 1.  

@@ -81,7 +81,7 @@
         
         Arrow functions provide a concise syntax for defining functions, especially for one-liners.
         
-        ```jsx
+        ``jsx
         const square = (x) => x * x;
         
         let squaredValue = square(7);
@@ -139,7 +139,7 @@
     4. Write a function `stringConcat` that takes two string arguments and returns concatenated string. Call this function to concatenate your first and last name into a full name. Display the returned full name.
     5. Write a function `greetUser` that takes username as input parameter and returns a greeting text for that user. Call the function for at least 3 different users and display their customized greetings.
 
-
+`
     //-----------------Answers-----------------
 
     1.
