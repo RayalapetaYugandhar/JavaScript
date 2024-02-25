@@ -57,6 +57,15 @@
 
         console.log(bike.model); 
 --------------------------------------
+let person = {
+  firstName: "Yugandhar",
+  lastName: "Babu",
+  age: 24
+};
+
+console.log(`Hello Mister ${person.firstName} ${person.lastName}, You age is ${person.age}`);
+
+------------------------------------
 `
     
     **3. Methods:**
@@ -75,6 +84,33 @@
     
     console.log(calculator.add(5, 3));      // Calling the add method
     console.log(calculator.subtract(10, 2)); // Calling the subtract method
+
+    -------Practice--------
+
+    let calculator = {
+      add(a,b){
+          return a+b;
+      },
+      sub(a,b){
+          return a-b;
+      },
+      mul(a,b){
+          return a*b;
+      },
+      div(a, b) {
+          return a/b;
+      },
+      moduls(a,b) {
+          return a%b;
+      }
+  };
+  console.log(calculator.add(4,8));
+  console.log(calculator.sub(4,8));
+  console.log(calculator.mul(4,8));
+  console.log(calculator.div(4,8));
+  console.log(calculator.moduls(2,4));
+
+
     ```
     
     **4. Object Properties and Methods:**
@@ -110,6 +146,26 @@
     
     const nihar = new Person("Nihar", "Dodagatta");
     console.log(nihar.getFullName()); // Output: "Nihar Dodagatta"
+
+
+    -------------Practice---------
+
+    class myData {
+      constructor(firstName, lastName, age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+      }
+      getFullName() {
+        return `Your full name is ${this.firstName} ${this.lastName} and your age is ${this.age}`; 
+      }
+    }
+
+    const name = new myData('Rayalapeta Yugandhar', 'Babu', 23);
+
+    console.log(name.getFullName());
+
+    ----------------------------------------
     ```
     
     ### Attempt Quiz → [Click Here](https://forms.gle/cGSt4jnAjZGPyn339)
@@ -138,3 +194,22 @@
     - Using this keyword
     
     ### Congrats Mowa Successful ga complete chesnav! Next session lo kaluddam :)
+
+    ```
+  --------Answer-----------
+    let Rectangle = {
+      lenght: 5,
+      width: 3,
+  
+      area() {
+          return this.width * this.lenght;
+      },
+      perimeter(){
+          return this.lenght + this.width * 2;
+      }
+    };
+    
+    console.log(Rectangle.area());
+    console.log(Rectangle.perimeter());
+
+  ---------------------------------

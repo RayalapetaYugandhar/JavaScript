@@ -70,7 +70,29 @@
     
     person1.greet(); // Output: "Hello, my name is Yugandhar and I am 23 years old."
     person2.greet(); // Output: "Hello, my name is Vinay and I am 24 years old."
+
+
+
+    -------------------------practice--------------
+    class bike {
+      constructor(name, age){
+          this.name=name;
+          this.age=age;
+      }
+      greet(){
+          console.log(`Hello ${this.name}, How are you..Your age is ${this.age} Years. Welcome to our garage`);
+      }
+    }
     
+    const bike1 = new bike("Apache", 13);
+    const bike2 = new bike("FZ", 1);
+    
+    console.log(bike1.name);
+    console.log(bike2.age);
+    
+    bike1.greet();
+    bike2.greet();
+      
     ------------------------practice--------------------
         class Person{
           constructor(name, age) {
@@ -144,3 +166,98 @@
     ### Assignment Question:
     
     Create a class called 'BankAccount' with attributes accountNumber, name, balance. Write a constructor, deposit() and withdraw() methods to add/subtract money from balance. Create 2 accounts, make some deposits and withdrawals, and print updated balances.
+
+    -------------Answer----------
+`
+    class BankAccount {
+      constructor(accountNumber, name, balance) {
+        this.accountNumber = accountNumber;
+        this.name = name;
+        this.balance = balance;
+        console.log(`A/c No.: ${accountNumber}`);
+        console.log(`Account Holder name: ${this.name}`)
+        console.log(`Opening Balance: $${balance}`); 
+      }
+      // name() {
+      //     this.name = name;
+      //   //   console.log(`Account Holder name: ${this.name}`);
+      // }
+      deposit(amount) {
+        this.balance += amount;
+        console.log(`Deposited: $${amount}`);
+      }
+      withdraw(amount) {
+        if (amount <= this.balance) {
+          this.balance -= amount;
+          console.log(`Withdrawn: $${amount}`);
+        } 
+        else 
+        {
+          console.log(`Want to withdrawn: $${amount}`);
+          console.log('Insufficient balance');
+        }
+      }
+      displayBalance() {
+        console.log(`Account Balance: $${this.balance}`);
+      }
+    }
+    
+    // Create an instance of the BankAccount class
+    const account = new BankAccount('SB-123','Yugandhar', 1500);
+    
+    // account.name();
+    // Deposit money into the account
+    account.deposit(500);
+    // Withdraw money from the account
+    account.withdraw(400);
+    // Display the account balance
+    account.displayBalance();
+    // Withdraw money from the account
+    account.withdraw(1800);
+    // Display the account balance
+    account.displayBalance();
+    
+
+    --------------------------------
+
+class BankAccount {
+  constructor (accountNumber, name, balance) {
+      this.accountNumber = accountNumber;
+      this.name = name;
+      this.balance = balance;
+      
+      console.log(`A/C No is : ${this.accountNumber}`);
+      console.log(`Account Holder Name ${this.name}`);
+      console.log(`Opening balance ${this.balance}`);
+  }
+
+  deposit(amount) {
+          this.balance += amount;
+          console.log(`Deposited: $${amount}`);
+        }
+  withdraw(amount) {
+      if(amount <= this.balance) {
+          this.balance -= amount;
+          console.log(`Withdraw $${amount}`);
+      }else{
+          console.log(`want to withdraw amount ${amount}`);
+          console.log(`Insufficient balance`);
+      }
+  }
+  displayBalance() {
+      console.log(`Account Balance $${this.balance}`);
+  }
+  
+}
+
+const account = new BankAccount ('HDFC000', 'Yugandar' , 1500);
+
+account.deposit(600);
+account.withdraw(300);
+account.displayBalance();
+account.withdraw(2000);
+account.displayBalance();
+
+
+
+--------------------------------
